@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+	<title> My Test Menu </title>
+		<style type="text/css">
+		
+		div {
+			background-color:BlanchedAlmond;
+			border: 5px solid yellow;
+		}
+		
+		p {
+			font-family: "Lucida Grande", "Lucida Sans Unicode", 
+			Helvetica, Arial, Verdana, sans-serif;
+		}
+		
+		.veg:before {
+			content: url(img/veggie.png) " ";
+
+		}
+		
+		.meat:before {
+			content: url(img/meat.png) " ";
+		}
+		
+		.main.after {
+			content: url(img/meat.png) " ";
+		}
+		
+		#calculateTotal {
+			border: 1px solid #12a6a1;
+			color: #e8424f;
+			background: BlanchedAlmond;
+			padding: 10px 20px;
+			border-radius: 3px;
+			
+		}
+		
+		.veg {
+			text-transform: capitalize;
+			color: pink;
+			font-size: 22px;
+			border: 2px dotted green;
+		}
+		
+		.meat {
+			text-transform: capitalize;
+			color: purple;
+			font-size: 22px;
+			border: 2px dotted pink;
+			
+		}
+		
+		h2 {
+			text-align: center;
+			color: #4a4a4f;
+			text-transform: underline;
+		}
+		
+		h1 {
+			text-align: center;
+			color: #4a4a4f;
+		}
+		
+		</style>
+</head>
+<body>
+<div>
+	<h1>My Sample Menu </h1>
+	<h2>Vegetarian</h2>
+	<p class="veg">Rocket Drizzle Salad</p>
+	<p class="veg">All About The Beets</p>
+	<p class="veg">Great bowl of broccoli</p>
+	<p class="veg main">Lentil Masala with spinach</p>
+	<h2>Meat Mains</h2>
+	<p class="meat main">Peri Peri double chicken</p>
+	<button id="calculateTotal">How Much?</button>
+</div>
+</body>
+</html>
