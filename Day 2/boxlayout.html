@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Layout</title>
+         <style>
+         #container {
+             font-size: 0px;
+             margin-right: auto;
+             margin-left: auto;
+             width: 960px;
+             padding: 10px;
+             border-radius: 30px;
+             }
+        
+         .box {
+             display: block;
+             text-align: center;
+             width: 100%;
+             height: 150px;
+             background-color: Cyan;
+             margin: 0 0 10px 0;;
+             border-radius: 10px;
+             padding: 30px 30;
+             font-family: Roboto;
+			 font-size: 20px;
+            }
+            
+          .sidebar{
+             display: inline-block;
+             width: 350px;
+             height: 320px;
+             background-color: Cyan;
+             margin-right: 5px;
+             border-radius: 10px
+            }  
+            
+           .content{
+             display: inline-block;
+             width: 600px;
+             height: 320px;
+             background-color: Cyan;
+             margin-left: 5px;
+             border-radius: 10px;
+            }   
+         
+     </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="box"><h1>Header</h1></div>
+            <div class="sidebar"><h2>Sidebar</h2></div>
+            <div class="content"><h2>Content</h2></div>
+            <div class="box"><h2>Footer</h2></div>
+        </div>
+    </body>
+</html>

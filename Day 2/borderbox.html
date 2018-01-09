@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Box Model</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+
+			#container
+			{
+				margin-right: auto; /*center container with margins left & right set to auto*/
+				margin-left: auto;
+				width: 960px;	/*to center an element it must have a fixed width*/
+				border-radius: 10px;
+				padding: 10px;
+				font-size: 0; /* font-size:0 removes problem spaceing issue for inline-block*/
+				padding-top: 175px;
+				position: relative;
+				
+			}
+			.box{
+				position: relative;
+				display:block;
+				box-sizing: border-box;
+				background-color: rgba(129, 187, 201, 0.5);
+				width: 100%;
+				/*margin:10px;*/ /*pushing our element out of bounds*/
+				margin: 0 0 10px 0;
+				border-radius: 10px;
+				font-family: Roboto;
+				font-size: 20px;  /* important to declare font-size here, otherwise will be 0*/
+				text-align: center;
+				padding: 22px 23px;
+			}
+			.sidebar{
+				vertical-align: top;
+			    box-sizing: border-box;
+			    position: relative;
+			    padding-left: 40px;
+			    padding-right: 40px;
+			    border: 10px dotted white;
+				display: inline-block;
+				width: 375px;
+				margin-right: 5px;
+			}
+			.content{
+				vertical-align: top;
+			    box-sizing: border-box;
+			    position: relative;
+			    border: 10px dotted white;
+			    padding-left: 40px;
+			    padding-right: 40px;
+				display: inline-block;
+				width: 575px;
+				margin-left: 5px;
+			}
+			
+			p {
+				margin-bottom: 50px;
+			}
+			
+			#linkToTop {
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+			}
+			
+			#linkToTop1 {
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+			}
+			
+			#header {
+				position: fixed;
+				border: 1px solid black;
+				top: 0px;
+				left: 0px;
+				z-index: 200;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			
+			<div id="header" class="box"> <h1>Header</h1>
+			</div>
+			
+			<div class="box sidebar"><h2>Sidebar</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+			sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+			magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+			quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+			ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+			dolor in hendrerit in vulputate velit esse molestie consequat,
+			vel illum dolore eu feugiat nulla facilisis at vero eros et
+			accumsan et iusto odio dignissim qui blandit praesent luptatum
+			zzril delenit augue duis dolore te feugait nulla facilisi.
+			Nam liber tempor cum soluta nobis eleifend option congue
+			nihil imperdiet doming id quod mazim placerat facer possim
+			assum. Typi non habent claritatem insitam; est usus legentis
+			in iis qui facit eorum claritatem. Investigationes
+			demonstraverunt lectores legere me lius quod ii legunt saepius.
+			Claritas est etiam processus dynamicus, qui sequitur mutationem
+			consuetudium lectorum. Mirum est notare quam littera gothica,
+			quam nunc putamus parum claram, anteposuerit litterarum formas
+			humanitatis per seacula quarta decima et quinta decima. Eodem
+			modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
+			in futurum.</p>
+			</div>
+			
+			<div class="box content"><h2>Content</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+			sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+			magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+			quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+			ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+			dolor in hendrerit in vulputate velit esse molestie consequat,
+			vel illum dolore eu feugiat nulla facilisis at vero eros et
+			accumsan et iusto odio dignissim qui blandit praesent luptatum
+			zzril delenit augue duis dolore te feugait nulla facilisi.
+			Nam liber tempor cum soluta nobis eleifend option congue
+			nihil imperdiet doming id quod mazim placerat facer possim
+			assum. Typi non habent claritatem insitam; est usus legentis
+			in iis qui facit eorum claritatem. Investigationes
+			demonstraverunt lectores legere me lius quod ii legunt saepius.
+			Claritas est etiam processus dynamicus, qui sequitur mutationem
+			consuetudium lectorum. Mirum est notare quam littera gothica,
+			quam nunc putamus parum claram, anteposuerit litterarum formas
+			humanitatis per seacula quarta decima et quinta decima. Eodem
+			modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
+			in futurum.</p>
+			</div>
+			
+			<div class="box sidebar"><h2>Sidebar</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+			sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+			magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+			quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+			ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+			dolor in hendrerit in vulputate velit esse molestie consequat,
+			vel illum dolore eu feugiat nulla facilisis at vero eros et
+			accumsan et iusto odio dignissim qui blandit praesent luptatum
+			zzril delenit augue duis dolore te feugait nulla facilisi.
+			Nam liber tempor cum soluta nobis eleifend option congue
+			nihil imperdiet doming id quod mazim placerat facer possim
+			assum. Typi non habent claritatem insitam; est usus legentis
+			in iis qui facit eorum claritatem. Investigationes
+			demonstraverunt lectores legere me lius quod ii legunt saepius.
+			Claritas est etiam processus dynamicus, qui sequitur mutationem
+			consuetudium lectorum. Mirum est notare quam littera gothica,
+			quam nunc putamus parum claram, anteposuerit litterarum formas
+			humanitatis per seacula quarta decima et quinta decima. Eodem
+			modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
+			in futurum.</p>
+			<a href="#"><img src="../img/arrow.png" id="linkToTop" /><img src="../img/arrow.png" id="linkToTop1"/></a>
+			</div>
+			
+			<div class="box content"><h2>Content</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+			sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+			magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+			quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+			ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+			dolor in hendrerit in vulputate velit esse molestie consequat,
+			vel illum dolore eu feugiat nulla facilisis at vero eros et
+			accumsan et iusto odio dignissim qui blandit praesent luptatum
+			zzril delenit augue duis dolore te feugait nulla facilisi.
+			Nam liber tempor cum soluta nobis eleifend option congue
+			nihil imperdiet doming id quod mazim placerat facer possim
+			assum. Typi non habent claritatem insitam; est usus legentis
+			in iis qui facit eorum claritatem. Investigationes
+			demonstraverunt lectores legere me lius quod ii legunt saepius.
+			Claritas est etiam processus dynamicus, qui sequitur mutationem
+			consuetudium lectorum. Mirum est notare quam littera gothica,
+			quam nunc putamus parum claram, anteposuerit litterarum formas
+			humanitatis per seacula quarta decima et quinta decima. Eodem
+			modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
+			in futurum.</p>
+			</div>
+			
+			<div id="footer" class="box"><h2>Footer</h2></div>
+
+		</div>
+	</body>
+</html>

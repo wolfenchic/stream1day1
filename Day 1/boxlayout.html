@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Box Layout</title>
-     <style type="text/css">
+         <style>
          #container {
              font-size: 0;
              margin-right: auto;
@@ -13,23 +13,22 @@
              }
         
          .box {
-             display: block
-             font-size: 16px;
+             display: block;
              text-align: center;
              width: 100%;
              height: 150px;
              background-color: Cyan;
-             margin: 10px;
+             margin: 0 0 10px 0;;
              border-radius: 10px;
-             padding: 30px;
+             padding: 30px 0px;
+             font-family: Roboto;
+			 font-size: 20px;
             }
             
           .sidebar{
              display: inline-block;
-             font-size: 12px;
-             text-align: center;
-             width: 275px;
-             height: 150px;
+             width: 350px;
+             height: 320px;
              background-color: Cyan;
              margin-right: 5px;
              border-radius: 10px
@@ -37,10 +36,8 @@
             
            .content{
              display: inline-block;
-             font-size: 12px;
-             text-align: center;
-             width: 675px;
-             height: 150px;
+             width: 600px;
+             height: 320px;
              background-color: Cyan;
              margin-left: 5px;
              border-radius: 10px;
