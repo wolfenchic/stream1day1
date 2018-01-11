@@ -1,0 +1,70 @@
+body {
+			height: 100%;
+		}
+		
+			
+		.box {
+			background-color: gray;
+			color: red;
+		}
+		
+
+		.saleImage {
+		    position: absolute;
+				top: 0;
+				right: 10px;
+
+		}
+		
+
+		#header {
+			text-align: center;
+			width: 960px;
+			height: 100px;
+			margin-bottom: 30px;
+		}
+
+		h1 {
+			padding-top: 20px;
+		}
+		
+		.sidebar{
+				vertical-align: top;
+			    box-sizing: border-box;
+			    position: relative;
+			    padding-top: 30px
+			    padding-left: 40px;
+			    padding-right: 40px;
+			    border: 10px dotted white;
+				display: inline-block;
+				width: 375px;
+				margin-right: 5px;
+				margin-bottom: 20px;
+			}
+			.content{
+				vertical-align: top;
+			    box-sizing: border-box;
+			    position: relative;
+			    border: 10px dotted white;
+			    padding-left: 40px;
+			    padding-right: 40px;
+				display: inline-block;
+				width: 575px;
+				margin-left: 5px;
+				margin-bottom: 20px;
+			}
+
+		#footer {
+		    background-color: red;
+		    color: white;
+		    text-align: center;
+		    width: 960px;
+		   	position: fixed;
+			border: 1px solid black;
+			bottom: 0px;
+			left: 0px;
+			z-index: 200; 
+			margin-top: 20px;
+			
+			}
+			

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gradients</title>
+    </head>
+    <style>
+         #container {
+             font-size: 0;
+             margin-right: auto;
+             margin-left: auto;
+             width: 960px;
+             padding: 10px;
+             border-radius: 30px;
+             background: linear-gradient(to bottom, #ccffff 0%, #ff99cc 100%);
+             }
+        
+         .box {
+             display: block;
+             text-align: center;
+             width: 960px;
+             height: 150px;
+             background: linear-gradient(to top, #33ccff, #9cd1d0, #c7effb, #d0b6eb, #ff99cc 70%);
+             margin: 10px 0 10px 0;;
+             border-radius: 10px;
+             padding: 30px 0px;
+             font-family: Roboto;
+			 font-size: 20px;
+			 color: white;
+         }
+			 
+
+            
+          .sidebar{
+             display: inline-block;
+             width: 380px;
+             height: 320px;
+             background: linear-gradient(to bottom right, #33ccff, #ff99cc, #9cd1d0);
+             padding-left: 40px;
+			 padding-right: 40px;
+             border-radius: 10px;
+             margin-right: 10px;
+             
+            }  
+            
+           .content{
+             display: inline-block;
+             width: 380px;
+             height: 320px;
+             background: linear-gradient(to bottom left, #33ccff, #ff99cc, #9cd1d0);
+              padding-left: 40px;
+			 padding-right: 40px;
+             border-radius: 10px;
+             margin-left: 10px;
+            }
+            
+            .mermaid {
+                float: right;
+                padding-top: 20px;
+            }
+            
+            .mermaid:hover {
+                 -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+                transform: perspective(200px) rotateY(3600deg);
+                transition: transform 7s ease;
+            }
+            
+            .unicorn {
+                float: left;
+                padding-top: 20px;
+                
+                
+            }
+            
+             .unicorn:hover {
+                transform: perspective(200px) rotateY(3600deg);
+                transition: transform 7s ease-in-out;
+                
+            }
+            
+             .shimmer{
+             display: inline-block;
+             width: 920px;
+             height: 320px;
+             background-color: #9cd1d0;
+             margin-top: 20px;
+			 padding-right: 40px;
+             border-radius: 10px;
+             margin-right: 10px;
+             font-family: Roboto;
+			 font-size: 60px;
+			 color: white;
+			 text-align: center;
+			 animation: magic 5s infinite;
+			
+            }  
+        
+             @keyframes magic{
+              0% {background-color: #9cd1d0}
+              25% {background-color: #33ccff}
+              50% {background-color: #ff99cc}
+              100% {background-color: #9cd1d0;}
+             }
+             
+            
+     </style>
+<body>
+     <body>
+        <div id="container">
+            <div class="box"><h1>The Mythical Doorway</h1></div>
+            <div class="sidebar"><h2>Sidebar</h2><img src="./images/unicorn-png-7.png" class="unicorn" width="250px" height="280px"></div>
+            <div class="content"><h2>Content</h2><img src="./images/unicorn-png-7.png" class="mermaid" width="250px" height="280px"></div>
+            <div class="shimmer"><p>This will magically change color</p></div>
+            
+            <div>
+            <video controls=“controls”  heigth="350px" width="400px" preload="metadata" class="uniVideo">
+            <source src="./video/MP4_Unicorn.mp4" type="video/mp4">
+            </video>
+            </div>
+            
+            <div class="box"><h2>Back To Reality</h2></div>
+        </div>
+</body>
+</html>

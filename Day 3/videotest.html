@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video</title>
+        <style>
+            .jazzcat {
+                -webkit-filter: hue-rotate(300deg) sepia(1) contrast(45) saturate(1);
+            }
+        </style>
+    </head>
+    <body>
+     <video controls=“controls” heigth="350px" width="400px" preload="metadata" poster="./images/jazzcat.png" class="jazzcat">
+        <source src="./video/MP4_Bunny.mp4" type="video/mp4">
+        <track src=".video/sub.srt" default kind="subtitles" srclang="en" label="English">
+        <source src="./video/OGV_Bunny.ogv" type="video/ogv">
+        <source src="./video/WEBM_Bunny.webm" type="video/webm">
+    </video>
+    </body>
+</html>
