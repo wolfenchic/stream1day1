@@ -32,46 +32,57 @@
 			flex:1;
 			height: 30px;
 			font-family: Roboto;
-			padding: 20px 5px 5px 5px;
+			padding: 20px;
 			text-align: center;
 			font-size: 20px;
+			border: 1px solid white;
 		}
 		
 		#landing{
 			display: flex;
-			padding: 20px 20px 20px 20px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
+			
+		#landing-message{
+			text-align: center;
+			font-family: Dosis;
+			font-size: 50px;
+			margin: 50px 20px;
 			
 		}
 		
-		/*.landing-graphic{
+		.landing-graphic{
 			width: 100px;
-			height: 100px;
-			 	}*/
+		
+		}
 			 
 		
 		.cardBox{
             display: flex;
             justify-content: space-around;
             flex-direction: column;
-          	align-items: stretch;    
+          	align-items: stretch;  
+          	text-align: center;
 		}
 		
 		.card {
             width: 100%;
-            background-color: grey;
+            background-color: #D3D3D3;
             border: 2px solid black;
             margin: 5px; 
+            justify-content: space-around;
+            flex: 1;
             
 		}
 
           
 		.cardImage{
-         display:block;
-          margin-top: 5%;
-          margin-left:auto;
-          margin-right:auto;
           width: 90%;
-          padding-right: 10px;
+          justify-content: center;
+          margin-top: 20px;
          
         }
         
@@ -102,7 +113,7 @@
      
     
 
-		@media screen and (min-width: 800px){
+		@media screen and (min-width: 700px){
 			nav{
 			   flex-direction: row;
                 align-items:baseline;
@@ -162,33 +173,32 @@
 	</nav>
 	</div>
 
- <div id="landing">
-           <div id="landing-message">
+ <section id="landing">
+           <article id="landing-message">
                <h1>Make Creative Clever Fun Apps. Simple.</h1>
-           </div>
-           <div class="landing-graphic">
-               <img class="landing-image" src="./images4/laptop.png"" alt="laptop" width="400">
-           </div>
-   </div>
+           </article>
+           <article class="landing-graphic">
+               <img class="landing-image" src="./images4/laptop.png" alt="laptop" width="400"></article>
+   </section>
 
-<div class="cardBox">
+<section class="cardBox">
 	
-	<div class="card"><img class="cardImage" src="./images4/graphic1.png">
+	<article class="card"><img class="cardImage" src="./images4/graphic1.png">
             <h2>Web Info Sessions</h2>
             <p>If you have questions about your careers, then why not join one of our open evenings</p>
-        </div>
+        </article>
      
-     <div class="card"><img class="cardImage" src="./images4/graphic2.png">
+     <article class="card"><img class="cardImage" src="./images4/graphic2.png">
             <h2>Remote Learnin</h2>
             <p>If you have questions about your careers, then why not join one of our open evenings</p>
-        </div>
+        </article>
       
-       <div class="card">
+       <article class="card">
            <img class="cardImage" src="./images4/graphic3.png">
            <h2>Three</h2>
            <p>I know there's no We upon Ben Bulben's impartial plains.  I am Alone, there is only me.  So I... I must Start again...</p>
-       </div>
-</div>
+       </article>
+</section>
 
 
 </body>
