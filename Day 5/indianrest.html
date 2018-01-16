@@ -4,211 +4,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Flexbox</title>
+		<link rel="stylesheet" href="indiancss.css">
 		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-    <style>
-        
-        body {
-             background-image: url(image5/indianbackground.png);
-             background-size: contain;
-
-        }
-        
-        nav{
-		    display: flex;
-			flex-direction: column;
-			align-items: stretch;
-			font-family: Roboto;
-			margin: 30px auto;
-			width: 100%;
-			height: 500px;
-			border-radius: 10px;
-			margin-top: 0px;
-		}
-		
-		a{
-			text-decoration: none;
-			color: white;
-			flex:1;
-			height: 30px;
-			font-family: Roboto;
-			padding: 20px;
-			text-align: center;
-			font-size: 20px;
-			border: 1px solid white;
-		}
-		
-		
-			.landing{
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			text-align: center;
-			align-items: center;
-			width: 100%;
-			color: white;
-			padding-bottom: 20px;
-			/*flex-wrap: wrap;*/
-		}
-			
-		    .landingMessage{
-			font-family: 'Indie Flower', cursive;
-			font-size: 50px;
-			padding-left: 20px;
-			padding-right: 20px;
-			
-		}
-		
-		    .logo{
-		        width: 150px;
-		        flex: 1;
-		        -webkit-filter: brightness(0) invert(1);
-		    }
-		    
-		    .logo:hover {
-                transform: perspective(200px) rotateY(3600deg);
-                transition: transform 7s ease-in-out;
-                
-		    }
-		
-		
-		.content{
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-          	align-items: stretch;  
-          	text-align: center;
-          	border: 2px solid white;
-          	font-family: 'Indie Flower', cursive;
-          	font-size: 1.5rem;
-          	margin: 20px;
-		}
-		
-		.box {
-            width: 100%;
-            margin: 10px; 
-            justify-content: space-around;
-            flex: 1;
-            background-color: white;
-            
-}
-            
-          
-		.boxImage{
-          width: 80%;
-          justify-content: center;
-          margin-top: 20px;
-          background-color: white;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-          padding: 30px;
-         
-        }
-        
-        	.videoContent{
-        	display: flex;
-			flex-direction: column;
-			justify-content: center;
-			text-align: center;
-			align-items: center;
-			width: 100%;
-			color: black;
-		}
-    
-		
-			.videoText {
-			font-family: 'Indie Flower', cursive;
-			font-size: 50px;
-			padding-left: 20px;
-			padding-right: 20px;
-            
-             
-			}
-            
-            .avideo {
-          width: 50%;
-          justify-content: center;
-          margin-top: 20px;
-          background-color: white;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-          padding: 30px;
-                
-            }
-
-        
-        .footerImage{
-            height: 100px;
-            width: 200px;
-            display: flex;
-           
-        }
-        
-        a:hover{
-        background-color: white;
-        transition: background-color .3s ease;
-        color: orange;
-        
-     }
-        
-        	@media screen and (min-width: 700px){
-			nav{
-			   flex-direction: row;
-                align-items:baseline;
-                justify-content: space-around;
-                height:50px;
-			   
-			}
-			a{
-			    flex: 1;
-
-			}
-	
-			
-			 .landing{
-                text-align: center;
-                flex-direction: row;
-                justify-content: center;
-                align-items:center;
-                flex-wrap: nowrap;
-            }
-			
-			
-            .content{
-            	flex-direction: row;
-                align-items:stretch;
-                justify-content: space-around;
-            }
-            
-            .box{
-                width: 30%;
-                align-items: stretch;
-            }
-            
-            .videoContent{
-            	flex-direction: row;
-                align-items: stretch;
-                justify-content: space-around;
-                background-color: white;
-            }
-            
-            .videoText {
-                width: 100%;
-                align-items: stretch;
-            }
-            
-            .footer {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
-            
-            .footerImage{
-            height: 100px;
-            width: 200px;
-        	}
-        	}
-        
-    </style>
+ </head>
     <body>
         
         
@@ -240,17 +40,34 @@
                   <h2>Curry Menu</h2>
                   <p>Choose from our menu of award winning curries.</p>
                 </article>
-          </section>
+                </section>
+          
          
-            
-           <section class="videoContent">
-              <article class="avideo">
-            <video> controls="video" preload="metadata" class="video" height="400px" width="400px">
-            <source src="./video5/video.mp4#t=30,60" type="video/mp4"></video></article>
-            <article class="videoText">
-            </article><h2>Watch and Learn</h2>
-             <p>Learn how to recreate our yummy curries by subscribing to our Youtube channel.</p>
+        <section class ="videoContent">
+            <article class="box1">
+            <h2>Watch and Learn</h2>
+             <p>Subscribe to our weekly newsletter and get exclusive videos and recipes delivered straight your inbox. </p>
+             <div class="subscribe">
+             <form>
+        <fieldset>
+            <legend>Subscribe</legend>
+        <label for="fname" class="field">First Name:</label><input type="text" id="fname" placeholder="required field" autocomplete="on" name="fname"/></br>
+        <label for="email" class="field">Email:</label><input type="text" id="email" placeholder="enter email" name="email"></br>
+        <label for="telephone" class="field">Phone:</label><input type="text" pattern="08[3-9]{1}[0-9]{7}" title="08 followed by 3-9, then a 7 digit mobile number"/></br>
+        <label for="choose your date" class="date">Date:</label><input type="date" name="bday"></br>
+        <label for="option" class="option">What would you like to hear about?:</label><select id="Preferences"><br>
+             <option value="Preferences">Special Offers</option>
+             <option value="Preferences">Recipes</option>
+             <option value="Preferences">New Menu options </option></br>
+        </br><input  type="submit" class="submit" value="submit"/>
+        </div>
+      </fieldset>
+      </form>
               </article>
+             <article class="box1">
+            <video class="video" controls="video" preload="metadata" height="400px" width="400px">
+            <source src="./video5/video.mp4#t=30,60" type="video/mp4"></video>
+            </article>
             </section>
           
           
