@@ -1,0 +1,234 @@
+
+        
+        body {
+             background-image: url(image5/indianbackground.png);
+             background-size: contain;
+
+        }
+       
+		
+		a{
+			text-decoration: none;
+			color: white;
+			flex:1;
+			height: 30px;
+			font-family: Roboto;
+			padding: 20px;
+			text-align: center;
+			font-size: 20px;
+		}
+		
+		.navbar-default{
+		    background-color: white;
+		}
+		
+		.navbar-brand{
+		    font-size: 25px;
+		}
+		
+			.landing{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			align-items: center;
+			width: 100%;
+			color: white;
+			padding-bottom: 20px;
+			
+		}
+			
+		    .landingMessage{
+			font-family: 'Indie Flower', cursive;
+			font-size: 50px;
+			padding-left: 20px;
+			padding-right: 20px;
+			
+		}
+		
+		    .logo{
+		        width: 150px;
+		        flex: 1;
+		        -webkit-filter: brightness(0) invert(1);
+		    }
+		    
+		    .logo:hover {
+                transform: perspective(200px) rotateY(3600deg);
+                transition: transform 7s ease-in-out;
+                
+		    }
+		
+		
+		.content{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+          	align-items: stretch;  
+          	text-align: center;
+          	border: 2px solid white;
+          	font-family: 'Indie Flower', cursive;
+          	font-size: 1.5rem;
+          	margin: 20px;
+		}
+		
+		.box {
+            width: 100%;
+            margin: 10px; 
+            justify-content: space-around;
+            flex: 1;
+            background-color: white;
+            
+}
+            
+          
+		.boxImage{
+          width: 80%;
+          justify-content: center;
+          margin-top: 20px;
+          background-color: white;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+          padding: 30px;
+         
+        }
+        
+        	.videoContent{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+          	align-items: stretch;  
+          	text-align: center;
+          	border: 2px solid white;
+          	font-family: 'Indie Flower', cursive;
+          	font-size: 1.5rem;
+          	margin: 20px;
+          	margin-bottom: 20px;
+        	}
+        	
+        	.box1{
+          width: 80%;
+          justify-content: center;
+          margin-top: 20px;
+          background-color: white;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+          padding: 30px;
+          margin-left: 10px;
+          margin-right: 20px;
+          flex: 1;
+         
+        }
+        
+        .video{
+          width: 80%;
+          justify-content: center;
+          margin-top: 20px;
+          background-color: white;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+          padding: 30px;
+          margin-right: 10px;
+         
+        }
+
+        
+        .footerImage{
+            height: 100px;
+            width: 200px;
+            display: flex;
+           
+        }
+        
+        a:hover{
+        background-color: white;
+        transition: background-color .3s ease;
+        color: orange;
+        
+     }
+     
+     .subscribe {
+             justify-content:center;
+            width: 550px;
+            margin: auto;
+     }
+     
+     fieldset{
+         justify-content: center;
+            width: 400px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 100px;
+            font-size: 20px;
+            clear: both;
+    
+         }
+         
+         label.field{
+            text-align: left;
+            width: 80%;
+            clear: both;
+         }
+        
+        	@media screen and (min-width: 700px){
+			/*nav{
+			   flex-direction: row;
+                align-items:baseline;
+                justify-content: space-around;
+                height:50px;*/
+			   
+			}
+			a{
+			    flex: 1;
+
+			}
+	
+			
+			 .landing{
+                text-align: center;
+                flex-direction: row;
+                justify-content: center;
+                align-items:center;
+                flex-wrap: nowrap;
+            }
+			
+			
+            .content{
+            	flex-direction: row;
+                align-items:stretch;
+                justify-content: space-around;
+            }
+            
+            .box{
+                width: 30%;
+                align-items: stretch;
+            }
+            
+            .videoContent{
+            	flex-direction: row;
+                align-items: stretch;
+                justify-content: space-around;
+                
+            }
+            
+            .box1 {
+                width: 100%;
+                align-items: stretch;
+                
+            }
+            
+            .footer {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            
+            .footerImage{
+            height: 100px;
+            width: 200px;
+        	}
+        	
+        	.subscribe {
+             justify-content:center;
+            width: 550px;
+            margin: auto;
+        	}
+        	
+        
