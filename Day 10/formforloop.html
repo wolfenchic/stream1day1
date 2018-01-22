@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Forms</title>
+    
+    <style>
+        
+        #myList {
+            background-color: pink;
+            
+        }
+        
+        ul :before {
+    color: white;
+    content: '» ';
+    font-size: 1.2em;
+    font-weight: bold;
+}
+    </style>
+  
+</head>
+<body>
+    <ul id="myList"></ul>
+    <script>
+        let head = document.getElementById("myList");
+        let number = prompt("Enter a number:");
+        for(let i=1; i < 11; i++) {
+            document.getElementById("myList").innerHTML += "<li>" + number * i + "</li>";
+        }
+        
+    </script>
+   
+</body>
+</html>

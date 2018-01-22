@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maths Game</title>
+    
+<style> 
+ 
+ body {
+     background-color: yellow;
+ }
+ 
+ .button {
+     background-color: blue;
+     border-radius: 10px;
+     height: 50px;
+     padding: 30px;
+     padding-bottom: 60px;
+     margin: 30px;
+     font-size: 20px;
+     color: white;
+ }
+ 
+ .theForm {
+     margin-left: 30px;
+     height: 20px;
+     padding: 30px;
+ }
+ 
+ 
+    
+</style>
+</head>
+<body>
+    <button class="button" onclick="setAdditionGame();">Addition Game</button>
+    <button class="button" onclick="setAdditionGame();">Subtraction Game</button>
+    <button class="button" onclick="setMultiplicationGame();">Multiplication Game</button>
+    
+<p id="score"></p>
+<p id="question"></p>
+
+<section class = "theForm">
+<form id="myForm" name="answerForm" onsubmit="checkAnswer(); return false;" data-gametype="addition" action="#">
+     Enter answer: <input type="number" name="answer">
+    <input type="hidden" name="rightAnswer">
+    <input type="submit" value="submit">
+</form>
+</section>
+
+<script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <button onclick="lightOn()">Turn on the light</button>
+    
+    <img id="myImage" src="image/bulboff.gif" style="width:100px">
+    
+    <button onclick="lightOff()">Turn off the light</button>
+    
+    <h1 id="heading"></h1>
+        
+    <script>
+    
+    let head = document.getElementById("heading");
+    let light = prompt("Do you want the light on or off?:");
+    
+    
+    
+    if(light === "on") {
+        document.getElementById('myImage').src="image/bulbon.gif";
+        } else {
+            document.getElementById('myImage').src="image/bulboff.gif";
+        }
+
+        </script>
+    
+    
+</body>
+</html>
+
+
