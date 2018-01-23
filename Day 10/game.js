@@ -2,14 +2,25 @@ let score = 0;
 let scorebox = document.getElementById("score");
 let questionbox = document.getElementById("question");
 let answerform = document.getElementById("myForm");
+let difficulty = 50;
 
 function checkAnswer() {
-    let gametype = document.getElementById("myForm").getAttribute("data-gametype");
-    if (answerform["answer"].value == answerform["rightAnswer"].value) {
-        alert("Hey, you got it right!");
+    let gametype = $("#myForm").attr("data-gametype");
+    if ($("[name=answer]").val() == answerform["rightAnswer"].value) {
+       // alert("Hey, you got it right!");
+       $("body").append("<div class='message'><h1>Yay! You got it right!</h1></div>");
+       $(".message").css("background-color", "green");
+       $(".message").fadeIn(1000);
+       $(".message").fadeOut(1000);
+       $(".message").remove();
         score++;
     } else {
-        alert("Sorry, you got it wrong :(");
+       // alert("Sorry, you got it wrong :(");
+       $("body").append("<div class='message'><h1>Waahhhhhh, wrong.</h1></div>");
+       $(".message").css("background-color", "red");
+       $(".message").fadeIn(1000);
+       $(".message").fadeOut(1000);
+       $(".message").remove();
     }
     scorebox.textContent = score;
     if(gametype == "addition") {
@@ -26,7 +37,8 @@ function checkAnswer() {
 
 
 function setAdditionGame() {
-    document.getElementById("myForm").setAttribute("data-gametype", "addition");
+   $("#myForm").attr("data-gametype", "addition"); 
+    //document.getElementById("myForm").setAttribute("data-gametype", "addition");
     additionQuiz();
 }
 
@@ -43,20 +55,21 @@ additionQuiz();
 
 
 function setSubtractionGame() {
-    document.getElementById("myForm").setAttribute("data-gametype", "subtraction");
+    $("#myForm").attr("data-gametype", "subtraction"); 
     subtractionQuiz();
 }
 
 function setMultiplicationGame() {
-    document.getElementById("myForm").setAttribute("data-gametype", "multiplication");
+    $("#myForm").attr("data-gametype", "multiplication"); 
     multiplicationQuiz();
 }
 
 function multiplicationQuiz() {
     let num1 = Math.floor(Math.random() * 10);
     let num2 = Math.floor(Math.random() * 10);
-    questionbox.textContent = "What is: " + num1 + " * " + num2 + "?";
-    answerform["rightAnswer"].value = (num1 * num2);
+   // questionbox.textContent = "What is: " + num1 + " * " + num2 + "?";
+   // answerform["rightAnswer"].value = (num1 * num2);
+   $("question").text("What is: " + num1 + " + " + num2 + "?");
     
 }
 
