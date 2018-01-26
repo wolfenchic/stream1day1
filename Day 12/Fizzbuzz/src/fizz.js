@@ -9,4 +9,4 @@ function FizzBuzz(number1) {
     return number1;
 }
     
-}
+ 

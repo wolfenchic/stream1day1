@@ -48,8 +48,8 @@ describe("Extra calculator functions", function() {
     });
     
     describe("The Year function", function() {
-        it("should return 2 years until 2018", function() {
-            expect(whatYear(2016)).toBe(2);
+        it("should return 2 years until 2020", function() {
+            expect(whatYear(2018)).toBe(2);
         });
    
    });

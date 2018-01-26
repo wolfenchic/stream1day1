@@ -3,6 +3,7 @@
         body {
              background-image: url(image5/indianbackground.png);
              background-size: contain;
+             -webkit-font-smoothing: antialiased;
 
         }
        
